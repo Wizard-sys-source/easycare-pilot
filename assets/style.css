@@ -83,7 +83,10 @@ h2{font-size:clamp(1.5rem,3.6vw,2.1rem);color:var(--navy);margin-bottom:10px;let
 /* ---- footer ---- */
 footer{background:var(--navy);color:#cfe0dc;padding:48px 0;margin-top:0}
 .foot-inner{display:flex;flex-direction:column;gap:12px;align-items:flex-start}
-.foot-inner img{filter:brightness(0) invert(1)}
+.foot-brand{display:flex;align-items:center;gap:12px}
+.foot-brand img{width:44px;height:44px}
+.foot-brand strong{display:block;color:#fff;font-size:1.25rem;line-height:1.1}
+.foot-brand span{display:block;color:#7fd1c8;font-size:.72rem;font-weight:700;letter-spacing:4px}
 footer a{color:#fff}
 .foot-contact{font-size:.95rem}
 
