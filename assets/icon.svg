@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="EasyCare icon">
+  <defs>
+    <linearGradient id="ecg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12a594"/>
+      <stop offset="1" stop-color="#0b7c72"/>
+    </linearGradient>
+  </defs>
+  <rect x="10" y="10" width="180" height="180" rx="44" fill="url(#ecg2)"/>
+  <rect x="62" y="34" width="76" height="132" rx="16" fill="#ffffff"/>
+  <rect x="71" y="48" width="58" height="86" rx="7" fill="#0b7c72"/>
+  <rect x="88" y="146" width="24" height="8" rx="4" fill="#0b7c72"/>
+  <path d="M83 88 q17 -20 34 0" stroke="#ffffff" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <path d="M92 102 q8 -9 16 0" stroke="#ffffff" stroke-width="7" fill="none" stroke-linecap="round"/>
+  <circle cx="140" cy="140" r="38" fill="#ffffff"/>
+  <circle cx="140" cy="140" r="30" fill="#f59e0b"/>
+  <path d="M127 140 l9 9 l18 -19" stroke="#ffffff" stroke-width="8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
