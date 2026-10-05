@@ -3,10 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>EasyCare Phone Service | Phone Repair in Wichita, KS</title>
-<meta name="description" content="Walk-in phone repair inside Mi Super Mercado Baratísimo, 2501 S Seneca St, Wichita, KS. Free diagnostic, most repairs ready in 25–45 minutes. Reparación de celulares sin cita en Wichita.">
-<meta property="og:title" content="EasyCare Phone Service | Phone Repair in Wichita, KS">
-<meta property="og:description" content="Walk-in phone repair inside Mi Super Mercado Baratísimo. Reparación de celulares sin cita.">
+<title>EasyCare Phone Service | Fast Phone Repair in Wichita, KS</title>
+<meta name="description" content="Walk-in phone repair inside Mi Super Mercado Baratísimo in Wichita. iPhone, Samsung, and more. Most repairs ready in 25-45 minutes.">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="EasyCare Phone Service | Phone Repair in Wichita">
+<meta property="og:description" content="Walk-in phone repair inside Mi Super Mercado Baratísimo. Most repairs ready in 25-45 minutes.">
+<meta property="og:url" content="https://wizard-sys-source.github.io/easycare-pilot/">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#071F55">
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2048%2056'%3E%3Crect%20x='12'%20y='2.5'%20width='24'%20height='45'%20rx='5.5'%20fill='%23fff'%20stroke='%230A1F55'%20stroke-width='2'/%3E%3Ccircle%20cx='24'%20cy='25'%20r='7.3'%20fill='none'%20stroke='%231E6FE0'%20stroke-width='2.6'%20stroke-dasharray='2.2%201.62'/%3E%3Ccircle%20cx='24'%20cy='25'%20r='6.3'%20fill='%231E6FE0'/%3E%3Cg%20transform='rotate(-40%2024%2025)'%3E%3Crect%20x='22.7'%20y='24.2'%20width='2.6'%20height='7'%20rx='1.3'%20fill='%23fff'/%3E%3Ccircle%20cx='24'%20cy='22.6'%20r='3'%20fill='%23fff'/%3E%3Crect%20x='23'%20y='18.6'%20width='2'%20height='3.4'%20fill='%231E6FE0'/%3E%3C/g%3E%3Cpath%20d='M4.5%2040.5C7%2053.5%2035%2056%2045.5%2034'%20fill='none'%20stroke='%233AA2FF'%20stroke-width='3.4'%20stroke-linecap='round'/%3E%3C/svg%3E">
@@ -627,7 +629,7 @@ var SHOP = {
 
 var T = {
   en: {
-    doc_title: "EasyCare Phone Service | Phone Repair in Wichita, KS",
+    doc_title: "EasyCare Phone Service | Fast Phone Repair in Wichita, KS",
     skip: "Skip to content",
     nav_label: "Sections", nav_fix: "Prices", nav_how: "How it works", nav_visit: "Hours",
     hero_title: "Phone repair while you shop.",
@@ -669,7 +671,7 @@ var T = {
     sms_hello: "Hi EasyCare!", generic_phone: "phone", hours_missing: "Hours not available"
   },
   es: {
-    doc_title: "EasyCare Phone Service | Reparación de celulares en Wichita, KS",
+    doc_title: "EasyCare Phone Service | Reparación rápida de celulares en Wichita, KS",
     skip: "Saltar al contenido",
     nav_label: "Secciones", nav_fix: "Precios", nav_how: "Cómo funciona", nav_visit: "Horario",
     hero_title: "Arreglamos tu celular mientras haces tus compras.",
@@ -1044,6 +1046,7 @@ function addSchema(){
     name: "EasyCare Phone Service",
     description: "Walk-in phone repair inside Mi Super Mercado Baratísimo in Wichita, Kansas: screens, batteries, charging ports, back glass, cameras and accessories.",
     telephone: SHOP.phone, email: SHOP.email, url: location.origin + location.pathname,
+    sameAs: [SHOP.google],
     address: addr,
     containedInPlace: { "@type": "GroceryStore", name: "Mi Super Mercado Baratísimo", address: addr },
     openingHoursSpecification: Object.keys(SHOP.hours).filter(function(d){ return SHOP.hours[d]; }).map(function(d){

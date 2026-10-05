@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://wizard-sys-source.github.io/easycare-pilot/sitemap.xml
