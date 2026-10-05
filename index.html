@@ -1,115 +1,1115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>EasyCare Phone Service | Phone Repair in Wichita, KS</title>
-<meta name="description" content="EasyCare Phone Service — fast, affordable phone repair inside Mi Super Mercado Baratísimo, 2501 S Seneca St, Wichita KS. Most repairs done in 25–45 minutes.">
-<link rel="icon" type="image/svg+xml" href="assets/icon.svg">
-<link rel="stylesheet" href="assets/style.css">
+<meta name="description" content="Walk-in phone repair inside Mi Super Mercado Baratísimo, 2501 S Seneca St, Wichita, KS. Free diagnostic, most repairs ready in 25–45 minutes. Reparación de celulares sin cita en Wichita.">
+<meta property="og:title" content="EasyCare Phone Service | Phone Repair in Wichita, KS">
+<meta property="og:description" content="Walk-in phone repair inside Mi Super Mercado Baratísimo. Reparación de celulares sin cita.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#071F55">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2048%2056'%3E%3Crect%20x='12'%20y='2.5'%20width='24'%20height='45'%20rx='5.5'%20fill='%23fff'%20stroke='%230A1F55'%20stroke-width='2'/%3E%3Ccircle%20cx='24'%20cy='25'%20r='7.3'%20fill='none'%20stroke='%231E6FE0'%20stroke-width='2.6'%20stroke-dasharray='2.2%201.62'/%3E%3Ccircle%20cx='24'%20cy='25'%20r='6.3'%20fill='%231E6FE0'/%3E%3Cg%20transform='rotate(-40%2024%2025)'%3E%3Crect%20x='22.7'%20y='24.2'%20width='2.6'%20height='7'%20rx='1.3'%20fill='%23fff'/%3E%3Ccircle%20cx='24'%20cy='22.6'%20r='3'%20fill='%23fff'/%3E%3Crect%20x='23'%20y='18.6'%20width='2'%20height='3.4'%20fill='%231E6FE0'/%3E%3C/g%3E%3Cpath%20d='M4.5%2040.5C7%2053.5%2035%2056%2045.5%2034'%20fill='none'%20stroke='%233AA2FF'%20stroke-width='3.4'%20stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;600;800&family=Barlow+Condensed:ital,wght@0,700;0,800;1,800&display=swap" rel="stylesheet">
+<!--
+  EasyCare Phone Service. One file, no build step: drop it on GitHub Pages as index.html.
+  Hours, prices, phone number, map links and the promo banner live in SHOP SETTINGS near the bottom.
+  Colours and fonts live in section 01 of the styles just below.
+-->
+<style>
+/* ============ 01 Tokens: brand colours and fonts ============ */
+:root{
+  --bg:#0A2A6E; --bg-deep:#071F55; --panel:#0F3585; --panel-2:#164299; --line:#2C58B0;
+  --care:#3AA2FF;            /* the blue in "Care" */
+  --tag:#FFD21F;             /* the yellow in "Phone Service" and the price tags */
+  --tag-ink:#0A1F55;
+  --red:#E4252D;             /* promo ribbon only */
+  --paper:#F4F7FF; --muted:#B9C7EC;
+  --open:#43E08A; --soon:#FFB020; --off:#8EA0CF;
+  --sans:"Barlow",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --cond:"Barlow Condensed","Avenir Next Condensed","Arial Narrow","Roboto Condensed",sans-serif-condensed,"DejaVu Sans Condensed",system-ui,sans-serif;
+  --dock:78px;
+  box-sizing:border-box;
+}
+*,*::before,*::after{box-sizing:inherit}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 112px);-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--paper);font:400 17px/1.55 var(--sans);
+  padding-bottom:calc(var(--dock) + env(safe-area-inset-bottom,0px) + 16px);
+  background-image:radial-gradient(circle at 12% -8%,#1D52C4 0,transparent 46%),radial-gradient(circle at 100% 30%,#0F3B9E 0,transparent 42%);
+  background-attachment:fixed}
+a{color:var(--care)}
+button,select,input,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--tag);outline-offset:3px;border-radius:8px}
+.wrap{max-width:720px;margin:0 auto;padding:0 18px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap}
+.skip{position:absolute;left:-999px;top:0}
+.skip:focus{left:12px;top:calc(env(safe-area-inset-top,0px) + 12px);z-index:99;background:var(--tag);color:var(--tag-ink);padding:10px 14px;border-radius:10px;font-weight:600}
+
+/* ============ 02 Header ============ */
+header.top{position:sticky;top:0;z-index:30;background:rgba(7,31,85,.93);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0px)}
+.brandrow{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0 4px}
+.brand{display:flex;align-items:center;gap:9px;text-decoration:none;color:var(--paper);flex:none}
+.brand svg{width:30px;height:35px;flex:none}
+.word{display:flex;flex-direction:column;line-height:1}
+.word b{font:800 22px/1 var(--sans);letter-spacing:-.02em}
+.word b span{color:var(--care)}
+.word small{font:700 13px/1.1 var(--cond);color:var(--tag);letter-spacing:.02em;margin-top:3px}
+.status{display:flex;align-items:center;gap:8px;font:600 13.5px/1.25 var(--sans);color:var(--muted);text-align:right;min-width:0}
+.status.is-open{color:var(--paper)}
+.dot{width:10px;height:10px;border-radius:50%;background:var(--off);flex:none}
+.dot.open{background:var(--open);animation:pulse 2s infinite}
+.dot.soon{background:var(--soon);animation:pulse-soon 1.4s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(67,224,138,.55)}70%{box-shadow:0 0 0 9px rgba(67,224,138,0)}100%{box-shadow:0 0 0 0 rgba(67,224,138,0)}}
+@keyframes pulse-soon{0%{box-shadow:0 0 0 0 rgba(255,176,32,.6)}70%{box-shadow:0 0 0 9px rgba(255,176,32,0)}100%{box-shadow:0 0 0 0 rgba(255,176,32,0)}}
+.navrow{display:flex;align-items:center;gap:12px}
+nav.links{display:flex;gap:16px;flex:1;min-width:0;overflow-x:auto;padding:6px 0 10px;scrollbar-width:none}
+nav.links::-webkit-scrollbar{display:none}
+nav.links a{flex:none;color:var(--muted);text-decoration:none;font:700 16.5px/1 var(--cond);letter-spacing:.01em;padding:7px 0;border-bottom:2px solid transparent}
+nav.links a[aria-current="true"]{color:var(--tag);border-color:var(--tag)}
+nav.links.more{-webkit-mask-image:linear-gradient(90deg,#000 78%,transparent);mask-image:linear-gradient(90deg,#000 78%,transparent)}
+.lang{display:flex;flex:none;background:var(--bg-deep);border:1px solid var(--line);border-radius:999px;padding:3px;margin-bottom:4px}
+.lang button{border:0;background:transparent;color:var(--muted);font:700 14px/1 var(--cond);letter-spacing:.04em;padding:8px 10px;min-width:40px;border-radius:999px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--paper);color:var(--tag-ink)}
+
+/* ============ 03 Hero ============ */
+.hero{display:grid;grid-template-columns:minmax(0,1fr) clamp(92px,29vw,122px);gap:14px;align-items:center;padding:26px 0 4px}
+.hero h1{font:800 clamp(32px,9.8vw,62px)/.96 var(--cond);letter-spacing:-.01em;margin:0 0 12px;text-wrap:balance;overflow-wrap:break-word;hyphens:auto}
+.hero p{margin:0;color:var(--muted);font-size:16.5px;line-height:1.5}
+.art{display:grid;justify-items:center}
+.phone{all:unset;display:block;width:100%;cursor:pointer;-webkit-tap-highlight-color:transparent;animation:drift 6.5s ease-in-out infinite}
+.phone:focus-visible{outline:3px solid var(--tag);outline-offset:6px;border-radius:26px}
+.phone svg{display:block;width:100%;height:auto;filter:drop-shadow(0 16px 22px rgba(2,8,30,.5))}
+.shadow{width:68%;height:12px;margin-top:8px;border-radius:50%;background:radial-gradient(closest-side,rgba(2,8,30,.65),transparent);animation:shadow 6.5s ease-in-out infinite}
+@keyframes drift{50%{transform:translateY(-8px) rotate(-1.5deg)}}
+@keyframes shadow{50%{transform:scaleX(.8);opacity:.55}}
+
+/* the repair moment: plays once on load, and again when the phone is tapped */
+.phone .cracks path{stroke-dasharray:100;stroke-dashoffset:0;opacity:0}
+.phone .glitch,.phone .sweep{opacity:0}
+.phone .gear,.phone .check{transform-box:fill-box;transform-origin:center}
+.phone.play .cracks path{animation:crack 3.6s .3s ease-out both}
+.phone.play .glitch{animation:glitch 3.6s .3s linear both}
+.phone.play .sweep{animation:sweep 3.6s .3s cubic-bezier(.5,0,.3,1) both}
+.phone.play .on{animation:turnon 3.6s .3s ease both}
+.phone.play .gear{animation:spin 3.6s .3s cubic-bezier(.3,.7,.3,1) both}
+.phone.play .check{animation:pop 3.6s .3s ease both}
+@keyframes crack{0%{stroke-dashoffset:100;opacity:1}16%{stroke-dashoffset:0;opacity:1}50%{opacity:1}64%,100%{stroke-dashoffset:0;opacity:0}}
+@keyframes glitch{0%{opacity:0}12%{opacity:1}20%{opacity:.45}26%{opacity:1}50%{opacity:1}58%,100%{opacity:0}}
+@keyframes sweep{0%,44%{opacity:1;transform:translateX(0)}70%{opacity:1;transform:translateX(330px)}71%,100%{opacity:0;transform:translateX(330px)}}
+@keyframes turnon{0%,52%{opacity:0}70%,100%{opacity:1}}
+@keyframes spin{0%,52%{transform:rotate(-120deg)}78%,100%{transform:rotate(0)}}
+@keyframes pop{0%,68%{transform:scale(0)}80%{transform:scale(1.18)}88%,100%{transform:scale(1)}}
+
+.where{display:flex;gap:12px;align-items:flex-start;margin:22px 0 4px;padding:14px 16px;border:1px solid rgba(58,162,255,.45);border-radius:16px;background:rgba(58,162,255,.08)}
+.where .pin{font-size:21px;line-height:1.2}
+.where strong{display:block;font-weight:600;font-size:17.5px;line-height:1.3}
+.where span{color:var(--muted);font-size:15.5px}
+.where a{font-weight:600;white-space:nowrap}
+
+.choices{display:grid;gap:16px;margin:22px 0 4px}
+.choice p{margin:0 0 8px;color:var(--muted);font-size:16px}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;min-height:56px;padding:0 18px;border-radius:14px;border:2px solid var(--tag);background:transparent;color:var(--tag);font:700 19px/1.1 var(--cond);letter-spacing:.01em;text-align:center;text-decoration:none;cursor:pointer;transition:transform .12s}
+.btn.solid{background:var(--tag);color:var(--tag-ink)}
+.btn.quiet{border-color:var(--line);color:var(--paper)}
+.btn:active{transform:scale(.98)}
+
+/* ============ 04 Sections ============ */
+.sec{padding:38px 0 4px}
+h2{font:800 32px/1.02 var(--cond);letter-spacing:-.005em;margin:0 0 8px}
+.sub{color:var(--muted);margin:0 0 16px;font-size:16.5px}
+
+/* promo: shows itself only between the dates in SHOP SETTINGS */
+.promo{margin-top:30px;padding:22px 18px 20px;border-radius:20px;background:linear-gradient(165deg,#103C9E,#0A2A6E 70%);border:1px solid var(--line)}
+.ribbon{display:inline-block;margin:0 0 14px -4px;padding:10px 16px 9px;background:var(--red);color:#fff;font:800 italic 21px/1 var(--cond);text-transform:uppercase;letter-spacing:.01em;transform:skewX(-8deg);box-shadow:5px 5px 0 rgba(2,8,30,.35)}
+.ribbon span{display:inline-block;transform:skewX(8deg)}
+.promo h2{margin-bottom:2px}
+.promo .dates{margin:0 0 14px;color:var(--muted)}
+.tags{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.tag{position:relative;display:grid;grid-template-columns:1fr auto;align-items:center;gap:12px;padding:10px 16px 10px 32px;border-radius:12px;background:var(--tag);color:var(--tag-ink)}
+.tag::before{content:"";position:absolute;left:12px;top:50%;width:9px;height:9px;margin-top:-4.5px;border-radius:50%;background:var(--bg)}
+.tag-name{font:700 19px/1.15 var(--cond)}
+.price{display:flex;align-items:flex-start;color:#C3121A;font:800 46px/.9 var(--cond);letter-spacing:-.02em}
+.price .cur{font-size:.5em;margin:.08em 1px 0 0}
+.price sup{font-size:.44em;line-height:1;margin-top:.1em}
+.promo .left{margin:14px 0 0;color:var(--tag);font:700 19px/1.2 var(--cond)}
+
+/* repair picker */
+.seg{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:4px;padding:4px;border-radius:14px;border:1px solid var(--line);background:var(--bg-deep)}
+.seg button{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;border:0;border-radius:10px;background:transparent;color:var(--muted);padding:12px 2px;font:700 clamp(14px,4.3vw,16.5px)/1 var(--cond);cursor:pointer;transition:background .2s,color .2s}
+.seg button[aria-pressed="true"]{background:var(--paper);color:var(--tag-ink)}
+.modelpick{position:relative;margin-top:10px}
+.modelpick select{width:100%;appearance:none;-webkit-appearance:none;padding:14px 44px 14px 16px;border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--paper);font-size:17px}
+.modelpick select option{color:#0A1F55;background:#fff}
+.modelpick::after{content:"";position:absolute;right:18px;top:50%;width:9px;height:9px;border-right:2px solid var(--muted);border-bottom:2px solid var(--muted);transform:translateY(-70%) rotate(45deg);pointer-events:none}
+.help{margin:8px 0 0;color:var(--muted);font-size:15px}
+.help summary{display:inline-block;padding:4px 0;color:var(--care);font-weight:600;cursor:pointer;list-style:none}
+.help summary::-webkit-details-marker{display:none}
+.help p{margin:2px 0 0}
+.menu{list-style:none;margin:8px 0 0;padding:0}
+.menu li{border-bottom:1px solid var(--line)}
+.svc{display:grid;grid-template-columns:44px 1fr 46px;gap:12px;align-items:center;width:100%;padding:15px 0;border:0;background:transparent;color:inherit;font:inherit;text-align:left;-webkit-tap-highlight-color:transparent}
+button.svc{cursor:pointer}
+button.svc:focus-visible{outline-offset:2px}
+.ico{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--panel-2);font-size:21px}
+.svc strong{display:block;font:600 18px/1.25 var(--sans)}
+.svc .d{display:block;margin-top:3px;color:var(--muted);font-size:15px;line-height:1.4}
+.go{display:grid;place-items:center;width:46px;height:46px;border-radius:50%;background:var(--tag);transition:transform .15s}
+.go svg{width:22px;height:22px}
+button.svc:hover .go{transform:scale(1.08)}
+button.svc:active .go{transform:scale(.9)}
+.callnote{margin:16px 0 0;color:var(--muted);font-size:15.5px}
+.callnote a{font-weight:600;white-space:nowrap}
+.pr{display:block;margin-top:7px;color:var(--tag);font:800 23px/1 var(--cond);letter-spacing:-.005em;animation:pricein .3s ease}
+.pr.ask,.pr.store{margin-top:6px;color:var(--care);font:600 15px/1.3 var(--sans);letter-spacing:0}
+@keyframes pricein{from{opacity:0;transform:translateY(4px)}}
+.pnote{margin:14px 0 0;color:var(--muted);font-size:15px}
+.sample{margin:4px 0 0;padding:10px 14px;border:1px dashed var(--tag);border-radius:12px;background:rgba(255,210,31,.12);font-size:15px}
+
+/* how it works */
+.steps{list-style:none;counter-reset:s;margin:8px 0 0;padding:0;display:grid;gap:16px}
+.steps li{counter-increment:s;display:grid;grid-template-columns:38px 1fr;gap:14px;align-items:start}
+.steps li::before{content:counter(s);display:grid;place-items:center;width:38px;height:38px;border:2px solid var(--tag);border-radius:50%;color:var(--tag);font:800 19px/1 var(--cond)}
+.steps strong{display:block;margin-top:6px;font-weight:600;font-size:18px;line-height:1.3}
+.steps span{color:var(--muted);font-size:16px}
+.facts{display:grid;gap:14px;margin-top:26px}
+.fact{border-left:3px solid var(--care);padding:2px 0 2px 14px}
+.fact strong{display:block;font-weight:600}
+.fact span{color:var(--muted);font-size:16px}
+
+/* hours & location ticket */
+.ticket{margin-top:10px;border:1px solid var(--line);border-radius:18px;background:var(--panel);overflow:hidden}
+.t-top{padding:18px 16px 14px}
+.now{display:flex;align-items:center;gap:10px;margin:0;font:800 30px/1 var(--cond)}
+.now .dot{width:12px;height:12px}
+.now-sub{margin:6px 0 14px;color:var(--muted)}
+.hours{width:100%;border-collapse:collapse;font-size:16px}
+.hours th{padding:7px 8px;text-align:left;font-weight:400;color:var(--muted);white-space:nowrap}
+.hours td{padding:7px 8px;text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.hours tr.is-today th,.hours tr.is-today td{background:rgba(255,210,31,.14);color:var(--paper);font-weight:600}
+.hours tr.is-today th{border-radius:8px 0 0 8px}
+.hours tr.is-today td{border-radius:0 8px 8px 0}
+.flag{display:inline-block;margin-left:6px;padding:2px 7px;border-radius:6px;background:var(--tag);color:var(--tag-ink);font:700 13px/1.2 var(--cond);vertical-align:1px}
+.perf{position:relative;height:0;margin:0 16px;border-top:2px dashed var(--line)}
+.perf::before,.perf::after{content:"";position:absolute;top:-11px;width:20px;height:20px;border:1px solid var(--line);border-radius:50%;background:var(--bg)}
+.perf::before{left:-27px}
+.perf::after{right:-27px}
+.t-bot{padding:16px 16px 18px}
+.addr{margin:0}
+.addr strong{display:block;font-size:18px;font-weight:600}
+.addr span{color:var(--muted)}
+.t-btns{display:grid;gap:10px;margin-top:14px}
+.contact{display:grid;gap:14px;margin-top:22px}
+.contact div{display:flex;flex-direction:column}
+.contact span{color:var(--muted);font-size:15px}
+.contact a{font-size:18px;font-weight:600;text-decoration:none;overflow-wrap:anywhere}
+
+footer{padding:44px 0 12px;color:var(--muted);font-size:14.5px}
+.fbrand{display:flex;align-items:center;gap:10px;margin-bottom:8px;color:var(--paper)}
+.fbrand svg{width:26px;height:30px}
+footer p{margin:4px 0}
+
+/* ============ 05 Dock, toast and message sheet ============ */
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:40;padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));background:rgba(7,31,85,.96);-webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);border-top:1px solid var(--line)}
+.dock .row{display:grid;grid-template-columns:auto auto minmax(0,1fr);gap:8px;max-width:720px;margin:0 auto}
+.dbtn{display:flex;align-items:center;justify-content:center;gap:5px;min-width:0;min-height:54px;padding:0 10px;border:1px solid var(--line);border-radius:14px;background:var(--panel);color:var(--paper);font:700 17px/1 var(--cond);text-decoration:none;white-space:nowrap}
+.dbtn.main span:last-child{overflow:hidden;text-overflow:ellipsis}
+.dbtn.main{background:var(--tag);border-color:var(--tag);color:var(--tag-ink)}
+.toast{position:fixed;left:50%;bottom:calc(var(--dock) + env(safe-area-inset-bottom,0px) + 14px);z-index:60;width:min(92vw,520px);padding:12px 16px;border-radius:12px;background:var(--paper);color:var(--tag-ink);font-size:15.5px;font-weight:600;text-align:center;opacity:0;transform:translate(-50%,20px);transition:.25s;pointer-events:none}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.scrim{position:fixed;inset:0;z-index:50;background:rgba(2,8,30,.6);opacity:0;pointer-events:none;transition:opacity .25s}
+.scrim.open{opacity:1;pointer-events:auto}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:55;display:flex;flex-direction:column;max-width:720px;max-height:92%;margin:0 auto;border-top:1px solid var(--line);border-radius:22px 22px 0 0;background:var(--panel);transform:translateY(105%);transition:transform .32s cubic-bezier(.2,.8,.2,1)}
+.sheet.open{transform:none}
+.grab{width:44px;height:5px;margin:10px auto 0;border-radius:5px;background:var(--line)}
+.shead{display:flex;align-items:center;justify-content:space-between;padding:8px 20px 12px;border-bottom:1px solid var(--line)}
+.shead h2{margin:0;font-size:28px}
+.x{width:44px;height:44px;border:1px solid var(--line);border-radius:50%;background:transparent;color:var(--paper);font-size:24px;line-height:1;cursor:pointer}
+.sbody{overflow-y:auto;padding:16px 20px calc(24px + env(safe-area-inset-bottom,0px))}
+.field{display:block;width:100%;min-height:120px;padding:13px 14px;border:1px solid var(--line);border-radius:12px;background:var(--bg-deep);color:var(--paper);font-size:17px;line-height:1.45;resize:vertical}
+.note{margin:10px 0 0;color:var(--muted);font-size:14.5px}
+.sbtns{display:grid;gap:10px;margin-top:16px}
+
+/* ============ 06 Wider screens ============ */
+@media (max-width:359px){.dbtn{gap:4px;padding:0 8px;font-size:15.5px}.word b{font-size:20px}}
+@media (min-width:640px){
+  .hero{grid-template-columns:1fr 210px;gap:32px;padding-top:44px}
+  .choices,.facts,.t-btns{grid-template-columns:1fr 1fr}
+  .t-top,.t-bot{padding-left:22px;padding-right:22px}
+  .perf{margin:0 22px}
+  .perf::before{left:-33px}
+  .perf::after{right:-33px}
+}
+
+/* ============ 07 Motion off for people who ask for less motion ============ */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+}
+</style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="ec-mark" viewBox="0 0 48 56">
+    <rect x="12" y="2.5" width="24" height="45" rx="5.5" fill="#fff" stroke="#0A1F55" stroke-width="2"/>
+    <rect x="20.5" y="5.2" width="7" height="1.8" rx=".9" fill="#0A1F55"/>
+    <circle cx="24" cy="25" r="7.3" fill="none" stroke="#1E6FE0" stroke-width="2.6" stroke-dasharray="2.2 1.62"/>
+    <circle cx="24" cy="25" r="6.3" fill="#1E6FE0"/>
+    <g transform="rotate(-40 24 25)">
+      <rect x="22.7" y="24.2" width="2.6" height="7" rx="1.3" fill="#fff"/>
+      <circle cx="24" cy="22.6" r="3" fill="#fff"/>
+      <rect x="23" y="18.6" width="2" height="3.4" fill="#1E6FE0"/>
+    </g>
+    <path d="M4.5 40.5C7 53.5 35 56 45.5 34" fill="none" stroke="#3AA2FF" stroke-width="3.4" stroke-linecap="round"/>
+  </symbol>
+  <symbol id="ic-chat" viewBox="0 0 24 24">
+    <path d="M6 4H18A3 3 0 0 1 21 7V13A3 3 0 0 1 18 16H11.5L7 19.6V16H6A3 3 0 0 1 3 13V7A3 3 0 0 1 6 4Z" fill="#0A1F55"/>
+    <circle cx="8" cy="10" r="1.4" fill="#FFD21F"/><circle cx="12" cy="10" r="1.4" fill="#FFD21F"/><circle cx="16" cy="10" r="1.4" fill="#FFD21F"/>
+  </symbol>
+</svg>
+
 <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
 
-<header class="topbar">
-  <div class="topbar-inner">
-    <a class="brand" href="#top" aria-label="EasyCare Phone Service">
-      <img src="assets/logo.svg" alt="EasyCare Phone Service" width="220" height="69">
-    </a>
-    <div class="topbar-actions">
-      <div class="lang-toggle" role="group" aria-label="Language / Idioma">
-        <button id="lang-en" class="lang-btn" aria-pressed="true">EN</button>
-        <button id="lang-es" class="lang-btn" aria-pressed="false">ES</button>
-      </div>
-      <a class="call-btn" href="tel:+13164610492">
-        <span aria-hidden="true">📞</span> <span data-i18n="call_now">Call now</span>
+<header class="top">
+  <div class="wrap">
+    <div class="brandrow">
+      <a class="brand" href="#top" aria-label="EasyCare Phone Service">
+        <svg aria-hidden="true" focusable="false"><use href="#ec-mark"/></svg>
+        <span class="word"><b>Easy<span>Care</span></b><small>Phone Service</small></span>
       </a>
+      <div class="status" id="status"><span class="dot" id="dot"></span><span id="statusText">Checking hours…</span></div>
+    </div>
+    <div class="navrow">
+      <nav class="links" aria-label="Sections" data-i18n-aria="nav_label">
+        <a href="#fix" data-i18n="nav_fix">Prices</a>
+        <a href="#how" data-i18n="nav_how">How it works</a>
+        <a href="#visit" data-i18n="nav_visit">Hours</a>
+      </nav>
+      <div class="lang" role="group" aria-label="Language / Idioma">
+        <button type="button" data-lang="en" aria-pressed="true" lang="en">EN</button>
+        <button type="button" data-lang="es" aria-pressed="false" lang="es">ES</button>
+      </div>
     </div>
   </div>
 </header>
 
-<main id="main">
-  <!-- HERO -->
-  <section class="hero" id="top">
-    <div class="hero-inner">
-      <p class="eyebrow" data-i18n="hero_eyebrow">📍 Inside Mi Super Mercado Baratísimo · Wichita, KS</p>
+<main id="main" class="wrap">
+  <div class="hero" id="top">
+    <div>
       <h1 data-i18n="hero_title">Phone repair while you shop.</h1>
-      <p class="lede" data-i18n="hero_lede">Walk in with a broken phone and walk out with it fixed. Most repairs are finished in 25–45 minutes — no appointment needed.</p>
-      <div class="hero-ctas">
-        <a class="btn primary" href="tel:+13164610492"><span aria-hidden="true">📞</span> <span data-i18n="call_us">Call (316) 461-0492</span></a>
-        <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=2501+S+Seneca+St+Wichita+KS+67217" target="_blank" rel="noopener"><span aria-hidden="true">📍</span> <span data-i18n="directions">Get directions</span></a>
+      <p data-i18n="hero_lede">Bring it to our booth. Most repairs are ready in 25–45 minutes, and you don't need an appointment.</p>
+    </div>
+    <div class="art">
+      <button class="phone play" id="phone" type="button" aria-label="Watch the repair again" data-i18n-aria="replay">
+        <svg viewBox="0 0 200 340" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="scrOff" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0C1B44"/><stop offset="1" stop-color="#050B20"/></linearGradient>
+            <linearGradient id="scrOn" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3A8DFF"/><stop offset=".55" stop-color="#1A4FC4"/><stop offset="1" stop-color="#0B2C7A"/></linearGradient>
+            <linearGradient id="sweepG" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".9"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+            <clipPath id="scrClip"><rect x="30" y="22" width="140" height="296" rx="21"/></clipPath>
+          </defs>
+          <rect x="15.5" y="86" width="6" height="24" rx="2.5" fill="#B9C9F0"/>
+          <rect x="15.5" y="118" width="6" height="40" rx="2.5" fill="#B9C9F0"/>
+          <rect x="178.5" y="112" width="6" height="56" rx="2.5" fill="#B9C9F0"/>
+          <rect x="19.5" y="9.5" width="161" height="321" rx="31" fill="#060E26" stroke="#DCE6FF" stroke-width="3"/>
+          <g clip-path="url(#scrClip)">
+            <rect x="30" y="22" width="140" height="296" fill="url(#scrOff)"/>
+            <g class="on">
+              <rect x="30" y="22" width="140" height="296" fill="url(#scrOn)"/>
+              <path d="M30 248C72 220 118 284 170 236V318H30Z" fill="#0A2A6E" opacity=".55"/>
+              <path d="M30 276C80 254 120 300 170 268V318H30Z" fill="#071F55" opacity=".6"/>
+              <g class="gear">
+                <circle cx="100" cy="150" r="31" fill="none" stroke="#fff" stroke-width="10" stroke-dasharray="9.7 9.78"/>
+                <circle cx="100" cy="150" r="27" fill="#fff"/>
+                <g transform="rotate(-40 100 150)">
+                  <rect x="95" y="146" width="10" height="30" rx="5" fill="#1A4FC4"/>
+                  <circle cx="100" cy="140" r="12" fill="#1A4FC4"/>
+                  <rect x="95.5" y="124" width="9" height="14" fill="#fff"/>
+                </g>
+              </g>
+              <g class="check">
+                <circle cx="131" cy="180" r="14" fill="#43E08A" stroke="#0A2A6E" stroke-width="3"/>
+                <path d="M124 180.5l5 5 10-11" fill="none" stroke="#0A2A6E" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+            </g>
+            <g class="glitch">
+              <circle cx="120" cy="100" r="30" fill="#000" opacity=".55"/>
+              <rect x="30" y="172" width="140" height="3" fill="#2EF2C8" opacity=".75"/>
+              <rect x="30" y="180" width="140" height="1.5" fill="#FF4FB0" opacity=".7"/>
+              <rect x="30" y="232" width="140" height="7" fill="#7C5CFF" opacity=".35"/>
+              <rect x="64" y="22" width="2" height="296" fill="#2EF2C8" opacity=".35"/>
+            </g>
+            <g class="cracks" fill="none" stroke="#EAF1FF" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <path pathLength="100" d="M120 100L146 70 159 53 172 45"/>
+              <path pathLength="100" d="M120 100L150 97 172 104"/>
+              <path pathLength="100" d="M120 100L141 129 149 161 172 186"/>
+              <path pathLength="100" d="M120 100L123 141 112 190 121 251 109 320"/>
+              <path pathLength="100" d="M120 100L97 129 72 161 52 201 28 215"/>
+              <path pathLength="100" d="M120 100L84 104 56 92 28 98"/>
+              <path pathLength="100" d="M120 100L104 70 96 43 84 20"/>
+              <path pathLength="100" d="M120 100L128 64 136 20"/>
+              <path pathLength="100" d="M108 92L118 84 132 90 134 106 122 114 108 110Z"/>
+              <path pathLength="100" d="M95 84L114 71 139 78 149 98 140 119 118 129 99 121 91 102Z"/>
+              <path pathLength="100" d="M75 125L64 98 82 66"/>
+              <path pathLength="100" d="M151 132L163 108 157 80"/>
+            </g>
+            <g transform="skewX(-14)"><rect class="sweep" x="-40" y="22" width="56" height="296" fill="url(#sweepG)"/></g>
+          </g>
+          <rect x="80" y="31" width="40" height="11" rx="5.5" fill="#000"/>
+        </svg>
+      </button>
+      <div class="shadow" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <div class="where">
+    <span class="pin" aria-hidden="true">📍</span>
+    <div>
+      <strong data-i18n="where_title">Inside Mi Super Mercado Baratísimo</strong>
+      <span>2501 S Seneca St, Wichita, KS. <a class="js-maps" href="https://www.google.com/maps/search/?api=1&amp;query=EasyCare+Phone+Service+2501+S+Seneca+St+Wichita+KS+67217" target="_blank" rel="noopener" data-i18n="where_link">Get directions</a></span>
+    </div>
+  </div>
+
+  <div class="choices">
+    <div class="choice">
+      <p data-i18n="choice1_cap">I know what's broken.</p>
+      <a class="btn solid" href="#fix" data-i18n="choice1_btn">See prices</a>
+    </div>
+    <div class="choice">
+      <p data-i18n="choice2_cap">Not sure what's wrong?</p>
+      <a class="btn" href="#visit" data-i18n="choice2_btn">Come in for a free check</a>
+    </div>
+  </div>
+
+  <section class="promo" id="promo" aria-labelledby="promoTitle" hidden>
+    <p class="ribbon"><span data-i18n="promo_ribbon">Limited-time offer</span></p>
+    <h2 id="promoTitle"></h2>
+    <p class="dates" id="promoDates"></p>
+    <ul class="tags" id="promoLines"></ul>
+    <p class="left" id="promoLeft"></p>
+  </section>
+
+  <section class="sec" id="fix" aria-labelledby="fixH">
+    <h2 id="fixH" data-i18n="fix_title">What happened to your phone?</h2>
+    <p class="sub" data-i18n="fix_sub">Pick your phone to see the full price of each repair. Tap one to text us.</p>
+    <div class="seg" id="brandSeg" role="group" aria-label="Phone brand" data-i18n-aria="brand_label"></div>
+    <div class="modelpick">
+      <label class="sr" for="modelSel" data-i18n="model_label">Model</label>
+      <select id="modelSel"></select>
+    </div>
+    <details class="help">
+      <summary data-i18n="help_q">Where do I find my model?</summary>
+      <p data-i18n="help_a">iPhone: Settings › General › About. Android: Settings › About phone.</p>
+    </details>
+    <p class="sample" id="sampleNote" data-i18n="sample_note" hidden>Sample prices for preview only.</p>
+    <ul class="menu" id="menu">
+      <li><div class="svc"><span class="ico" aria-hidden="true">📱</span><span><strong>Screen repair</strong><span class="d">Cracked glass, lines, a black screen, or touch that stops working.</span></span></div></li>
+      <li><div class="svc"><span class="ico" aria-hidden="true">🔋</span><span><strong>Battery replacement</strong><span class="d">Dies fast, shuts off on its own, or the battery is swollen.</span></span></div></li>
+      <li><div class="svc"><span class="ico" aria-hidden="true">🔌</span><span><strong>Charging port</strong><span class="d">Loose cable, slow charging, or it won't charge at all.</span></span></div></li>
+      <li><div class="svc"><span class="ico" aria-hidden="true">🪞</span><span><strong>Back glass</strong><span class="d">Shattered glass on the back of the phone.</span></span></div></li>
+      <li><div class="svc"><span class="ico" aria-hidden="true">📷</span><span><strong>Camera</strong><span class="d">Blurry photos, a black camera, or a cracked lens.</span></span></div></li>
+      <li><div class="svc"><span class="ico" aria-hidden="true">💧</span><span><strong>Water damage</strong><span class="d">Turn it off, don't charge it, and bring it in as soon as you can.</span></span></div></li>
+      <li><div class="svc"><span class="ico" aria-hidden="true">🔊</span><span><strong>Speaker, mic or buttons</strong><span class="d">You can't hear calls, they can't hear you, or a button is stuck.</span></span></div></li>
+      <li><div class="svc"><span class="ico" aria-hidden="true">🔎</span><span><strong>Free check</strong><span class="d">Not sure what's wrong? We look at it for free and tell you what it needs.</span></span></div></li>
+      <li><div class="svc"><span class="ico" aria-hidden="true">🎧</span><span><strong>Accessories</strong><span class="d">Cases, chargers, cables and screen protectors.</span></span></div></li>
+    </ul>
+    <p class="pnote" data-i18n="price_note">Full prices, parts and labor included. We confirm the price with you before we start.</p>
+    <p class="callnote"><span data-i18n="fix_call_q">Prefer to talk?</span> <a class="js-tel" href="tel:+13164610492" data-i18n="fix_call_link">Call (316) 461-0492</a></p>
+  </section>
+
+  <section class="sec" id="how" aria-labelledby="howH">
+    <h2 id="howH" data-i18n="how_title">How it works</h2>
+    <ol class="steps">
+      <li><div><strong data-i18n="s1_t">Walk in</strong><span data-i18n="s1_d">No appointment needed. Our booth is inside Mi Super Mercado Baratísimo.</span></div></li>
+      <li><div><strong data-i18n="s2_t">Free check</strong><span data-i18n="s2_d">We look at your phone and tell you what it needs.</span></div></li>
+      <li><div><strong data-i18n="s3_t">You approve the price</strong><span data-i18n="s3_d">You hear the price before we start. No surprises.</span></div></li>
+      <li><div><strong data-i18n="s4_t">Shop while we fix it</strong><span data-i18n="s4_d">Most repairs are ready in 25–45 minutes.</span></div></li>
+    </ol>
+    <div class="facts">
+      <div class="fact"><strong data-i18n="f1_t">45-day screen warranty</strong><span data-i18n="f1_d">If a screen we installed acts up, bring it back and we'll make it right.</span></div>
+      <div class="fact"><strong data-i18n="f2_t">iPhone, Samsung, tablets and more</strong><span data-i18n="f2_d">Don't see your device on the list? Ask us anyway.</span></div>
+    </div>
+  </section>
+
+  <section class="sec" id="visit" aria-labelledby="visitH">
+    <h2 id="visitH" data-i18n="visit_title">Hours &amp; location</h2>
+    <div class="ticket">
+      <div class="t-top">
+        <p class="now"><span class="dot" id="dot2"></span><span id="nowBig">Store hours</span></p>
+        <p class="now-sub" id="nowSub"></p>
+        <table class="hours">
+          <caption class="sr" data-i18n="hours_caption">Opening hours</caption>
+          <tbody id="hoursBody">
+            <tr><th scope="row">Monday</th><td>11:00 AM – 8:00 PM</td></tr>
+            <tr><th scope="row">Tuesday</th><td>11:00 AM – 8:00 PM</td></tr>
+            <tr><th scope="row">Wednesday</th><td>11:00 AM – 8:00 PM</td></tr>
+            <tr><th scope="row">Thursday</th><td>11:00 AM – 8:00 PM</td></tr>
+            <tr><th scope="row">Friday</th><td>11:00 AM – 8:00 PM</td></tr>
+            <tr><th scope="row">Saturday</th><td>11:00 AM – 8:00 PM</td></tr>
+            <tr><th scope="row">Sunday</th><td>12:30 PM – 8:00 PM</td></tr>
+          </tbody>
+        </table>
       </div>
-      <ul class="trust-chips">
-        <li><span aria-hidden="true">⚡</span> <span data-i18n="chip_speed">25–45 min repairs</span></li>
-        <li><span aria-hidden="true">🛡️</span> <span data-i18n="chip_warranty">45-day screen warranty</span></li>
-        <li><span aria-hidden="true">🔍</span> <span data-i18n="chip_diag">Free diagnostic</span></li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- SERVICES & PRICING -->
-  <section class="section" id="services">
-    <div class="wrap">
-      <h2 data-i18n="services_title">Services &amp; pricing</h2>
-      <p class="section-sub" data-i18n="services_sub">Straightforward pricing. You approve the exact quote before we touch your phone — no surprises.</p>
-      <div class="price-grid" id="price-grid"><!-- rendered by app.js --></div>
-      <p class="fine" data-i18n="services_fine">Prices are starting rates and vary by model. Final quote confirmed in store before any work begins.</p>
-    </div>
-  </section>
-
-  <!-- WHY EASYCARE -->
-  <section class="section alt" id="why">
-    <div class="wrap">
-      <h2 data-i18n="why_title">Why choose EasyCare</h2>
-      <div class="why-grid">
-        <div class="why-card"><div class="why-ico" aria-hidden="true">👨‍🔧</div><h3 data-i18n="why1t">Certified technicians</h3><p data-i18n="why1d">Trained specialists handle every repair with precision and care.</p></div>
-        <div class="why-card"><div class="why-ico" aria-hidden="true">⚡</div><h3 data-i18n="why2t">Fast same-day service</h3><p data-i18n="why2d">Most repairs finished in 25–45 minutes while you shop.</p></div>
-        <div class="why-card"><div class="why-ico" aria-hidden="true">🛡️</div><h3 data-i18n="why3t">45-day screen warranty</h3><p data-i18n="why3d">Screen repairs backed in writing. If it fails, we make it right.</p></div>
-        <div class="why-card"><div class="why-ico" aria-hidden="true">🏬</div><h3 data-i18n="why4t">Locally owned</h3><p data-i18n="why4d">A real neighborhood shop — talk directly to the person fixing your phone.</p></div>
-        <div class="why-card"><div class="why-ico" aria-hidden="true">🔍</div><h3 data-i18n="why5t">Free diagnostic</h3><p data-i18n="why5d">Not sure what's wrong? We'll check it out and tell you honestly.</p></div>
-        <div class="why-card"><div class="why-ico" aria-hidden="true">💎</div><h3 data-i18n="why6t">Premium parts only</h3><p data-i18n="why6d">Quality components, installed right — your phone leaves in top condition.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- VISIT -->
-  <section class="section" id="visit">
-    <div class="wrap visit-grid">
-      <div>
-        <h2 data-i18n="visit_title">Visit us</h2>
-        <p class="visit-line"><span aria-hidden="true">📍</span> <span data-i18n="address_label">Address</span><br>
-        <strong>2501 S Seneca St, Wichita, KS 67217</strong><br>
-        <span data-i18n="inside">Inside Mi Super Mercado Baratísimo</span></p>
-        <p class="visit-line"><span aria-hidden="true">🕐</span> <span data-i18n="hours_label">Hours</span><br>
-        <strong data-i18n="hours_week">Mon–Sat: 11:00 AM – 8:00 PM</strong><br>
-        <strong data-i18n="hours_sun">Sunday: 12:30 PM – 8:00 PM</strong></p>
-        <p class="visit-line"><span aria-hidden="true">📞</span> <span data-i18n="phone_label">Phone</span><br>
-        <a href="tel:+13164610492"><strong>(316) 461-0492</strong></a></p>
-        <p class="visit-line"><span aria-hidden="true">✉️</span> <span data-i18n="email_label">Email</span><br>
-        <a href="mailto:easycarephone@gmail.com"><strong>easycarephone@gmail.com</strong></a></p>
-        <div class="hero-ctas">
-          <a class="btn primary" href="https://www.google.com/maps/search/?api=1&query=2501+S+Seneca+St+Wichita+KS+67217" target="_blank" rel="noopener"><span aria-hidden="true">📍</span> <span data-i18n="directions">Get directions</span></a>
+      <div class="perf" aria-hidden="true"></div>
+      <div class="t-bot">
+        <p class="addr"><strong>2501 S Seneca St, Wichita, KS 67217</strong><span data-i18n="where_title">Inside Mi Super Mercado Baratísimo</span></p>
+        <div class="t-btns">
+          <a class="btn solid js-maps" href="https://www.google.com/maps/search/?api=1&amp;query=EasyCare+Phone+Service+2501+S+Seneca+St+Wichita+KS+67217" target="_blank" rel="noopener"><span aria-hidden="true">📍</span> <span data-i18n="directions">Get directions</span></a>
+          <a class="btn quiet js-google" href="https://share.google/a0hCkWs0mAg6rW5AZ" target="_blank" rel="noopener"><span aria-hidden="true">⭐</span> <span data-i18n="reviews">Google reviews</span></a>
         </div>
       </div>
-      <div class="visit-card">
-        <h3 data-i18n="walkin_title">Walk-ins welcome</h3>
-        <p data-i18n="walkin_body">No appointment necessary. Stop by the booth on South Seneca Street for a free diagnostic — whether it's a shattered iPhone screen or a failing Samsung battery, we're here to help.</p>
-      </div>
+    </div>
+    <div class="contact">
+      <div><span data-i18n="call_text_label">Call or text</span><a class="js-tel js-phone-text" href="tel:+13164610492">(316) 461-0492</a></div>
+      <div><span data-i18n="email_label">Email</span><a class="js-email" href="mailto:easycarephone@gmail.com">easycarephone@gmail.com</a></div>
     </div>
   </section>
+
+  <footer>
+    <div class="fbrand"><svg aria-hidden="true" focusable="false"><use href="#ec-mark"/></svg><strong>EasyCare Phone Service</strong></div>
+    <p data-i18n="foot_tag">Phone repair inside Mi Super Mercado Baratísimo in South Wichita.</p>
+    <p>2501 S Seneca St, Wichita, KS 67217</p>
+    <p><a class="js-tel js-phone-text" href="tel:+13164610492">(316) 461-0492</a></p>
+    <p><a class="js-email" href="mailto:easycarephone@gmail.com">easycarephone@gmail.com</a></p>
+    <p>© <span id="yr">2026</span> EasyCare Phone Service</p>
+  </footer>
 </main>
 
-<footer>
-  <div class="wrap foot-inner">
-    <div class="foot-brand">
-      <img src="assets/icon.svg" alt="" width="44" height="44">
-      <div><strong>EasyCare</strong><span>PHONE SERVICE</span></div>
-    </div>
-    <p data-i18n="foot_tag">Fast, honest phone repair in the heart of Wichita.</p>
-    <p class="foot-contact"><a href="tel:+13164610492">(316) 461-0492</a> · <a href="mailto:easycarephone@gmail.com">easycarephone@gmail.com</a></p>
+<nav class="dock" aria-label="Quick actions" data-i18n-aria="dock_label">
+  <div class="row">
+    <a class="dbtn js-tel" href="tel:+13164610492"><span aria-hidden="true">📞</span> <span data-i18n="dock_call">Call</span></a>
+    <a class="dbtn" id="dockText" href="sms:+13164610492"><span aria-hidden="true">💬</span> <span data-i18n="dock_text">Text</span></a>
+    <a class="dbtn main js-maps" href="https://www.google.com/maps/search/?api=1&amp;query=EasyCare+Phone+Service+2501+S+Seneca+St+Wichita+KS+67217" target="_blank" rel="noopener"><span aria-hidden="true">📍</span> <span data-i18n="dock_dir">Directions</span></a>
   </div>
-</footer>
+</nav>
 
-<script src="assets/app.js"></script>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="scrim" id="scrim"></div>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle" hidden>
+  <div class="grab" aria-hidden="true"></div>
+  <div class="shead">
+    <h2 id="sheetTitle" data-i18n="sheet_title">Your message</h2>
+    <button class="x" id="closeSheet" type="button" aria-label="Close" data-i18n-aria="close">×</button>
+  </div>
+  <div class="sbody">
+    <label class="sr" for="msg" data-i18n="sheet_title">Your message</label>
+    <textarea class="field" id="msg" rows="4"></textarea>
+    <p class="note" data-i18n="sheet_note">Change anything you like before sending. It goes to (316) 461-0492.</p>
+    <div class="sbtns">
+      <a class="btn solid" id="sendSms" href="sms:+13164610492"><span aria-hidden="true">💬</span> <span data-i18n="send">Send text</span></a>
+      <button class="btn" id="copyMsg" type="button" data-i18n="copy">Copy message</button>
+      <a class="btn quiet js-tel" href="tel:+13164610492"><span aria-hidden="true">📞</span> <span data-i18n="call_instead">Call instead</span></a>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+"use strict";
+
+/* ======================= SHOP SETTINGS: edit here ======================= */
+var SHOP = {
+  phone: "+13164610492",
+  phonePretty: "(316) 461-0492",
+  email: "easycarephone@gmail.com",
+  maps: "https://www.google.com/maps/search/?api=1&query=EasyCare+Phone+Service+2501+S+Seneca+St+Wichita+KS+67217",
+  google: "https://share.google/a0hCkWs0mAg6rW5AZ",
+
+  // Opening hours, Wichita time, 24-hour clock. 0 = Sunday ... 6 = Saturday. Use null for a closed day.
+  // The "open now" badge, the hours table and Google's business data all read from this one list.
+  hours: {
+    0: ["12:30", "20:00"],
+    1: ["11:00", "20:00"],
+    2: ["11:00", "20:00"],
+    3: ["11:00", "20:00"],
+    4: ["11:00", "20:00"],
+    5: ["11:00", "20:00"],
+    6: ["11:00", "20:00"]
+  },
+
+  // FULL PRICES: one number per repair, parts and labor included.
+  // Each entry is a price group: the phones that share prices, then the price of each repair.
+  // Type a price like 129.99. Leave null to show "Ask for a price" for that repair.
+  // Until real prices are in, add ?sample to the site address to preview the layout with placeholder prices.
+  // brand is "iPhone", "Samsung", "Motorola" or "Other". The model menu on the page is built from this list,
+  // so a phone added here shows up there too. Split a group in two if its phones need different prices.
+  // screen | battery | port (charging port) | back (back glass) | camera | sound (speaker, mic, buttons) | water (water damage cleaning)
+  // The free check always shows "Free", and accessories show "Prices in store".
+  prices: [
+    { brand: "iPhone", models: ["iPhone 17 Pro Max", "iPhone 17 Pro"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "iPhone", models: ["iPhone Air", "iPhone 17"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "iPhone", models: ["iPhone 16 Pro Max", "iPhone 16 Pro"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "iPhone", models: ["iPhone 16 Plus", "iPhone 16", "iPhone 16e"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "iPhone", models: ["iPhone 15 Pro Max", "iPhone 15 Pro"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "iPhone", models: ["iPhone 15 Plus", "iPhone 15"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "iPhone", models: ["iPhone 14 Pro Max", "iPhone 14 Pro"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "iPhone", models: ["iPhone 14 Plus", "iPhone 14"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "iPhone", models: ["iPhone 13 Pro Max", "iPhone 13 Pro"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "iPhone", models: ["iPhone 13", "iPhone 13 mini"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "iPhone", models: ["iPhone 12 Pro Max", "iPhone 12 Pro"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "iPhone", models: ["iPhone 12", "iPhone 12 mini"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "iPhone", models: ["iPhone 11 Pro Max", "iPhone 11 Pro"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "iPhone", models: ["iPhone 11"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "iPhone", models: ["iPhone XS Max", "iPhone XS", "iPhone XR", "iPhone X"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "iPhone", models: ["iPhone SE", "iPhone 8 Plus", "iPhone 8", "iPhone 7 Plus", "iPhone 7"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "Samsung", models: ["Galaxy S25 Ultra"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "Samsung", models: ["Galaxy S25+", "Galaxy S25"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "Samsung", models: ["Galaxy S24 Ultra"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "Samsung", models: ["Galaxy S24+", "Galaxy S24"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "Samsung", models: ["Galaxy S23 Ultra"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "Samsung", models: ["Galaxy S23", "Galaxy S22", "Galaxy S21"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "Samsung", models: ["Galaxy A36", "Galaxy A35", "Galaxy A26", "Galaxy A25"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "Samsung", models: ["Galaxy A16", "Galaxy A15", "Galaxy A14"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "Samsung", models: ["Galaxy Z Flip"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "Samsung", models: ["Galaxy Z Fold"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "Samsung", models: ["Galaxy Note"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "Samsung", models: ["Galaxy Tab"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "Motorola", models: ["Moto G Power", "Moto G Stylus", "Moto G Play", { label: { en: "Moto G (other)", es: "Moto G (otro)" }, name: { en: "Moto G", es: "Moto G" } }],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "Motorola", models: ["Motorola Edge"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "Motorola", models: ["Motorola Razr"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "Other", models: ["Google Pixel"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "Other", models: ["iPad"],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "Other", models: [{ label: { en: "Other tablet", es: "Otra tableta" }, name: { en: "tablet", es: "tableta" } }],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null },
+    { brand: "Other", models: [{ label: { en: "Other phone", es: "Otro celular" }, name: { en: "phone", es: "celular" } }],
+      screen: null, battery: null, port: null, back: null, camera: null, sound: null, water: null }
+  ],
+
+  // Promo banner. It appears on its own between start and end (Wichita dates, both days included)
+  // and disappears after. To run a new deal, change the dates and the lines.
+  // To preview it any time, add ?promo to the end of the site address.
+  promo: {
+    start: "2026-08-23",
+    end: "2026-08-31",
+    title: { en: "iPhone screen repair", es: "Cambio de pantalla de iPhone" },
+    lines: [
+      { en: "iPhone 7 to iPhone X", es: "iPhone 7 a iPhone X", price: "79.99" },
+      { en: "iPhone 11 to iPhone 13 Pro Max", es: "iPhone 11 a iPhone 13 Pro Max", price: "99.99" }
+    ]
+  }
+};
+/* ======================================================================= */
+
+var T = {
+  en: {
+    doc_title: "EasyCare Phone Service | Phone Repair in Wichita, KS",
+    skip: "Skip to content",
+    nav_label: "Sections", nav_fix: "Prices", nav_how: "How it works", nav_visit: "Hours",
+    hero_title: "Phone repair while you shop.",
+    hero_lede: "Bring it to our booth. Most repairs are ready in 25–45 minutes, and you don't need an appointment.",
+    replay: "Watch the repair again",
+    where_title: "Inside Mi Super Mercado Baratísimo", where_link: "Get directions",
+    choice1_cap: "I know what's broken.", choice1_btn: "See prices",
+    choice2_cap: "Not sure what's wrong?", choice2_btn: "Come in for a free check",
+    promo_ribbon: "Limited-time offer", promo_left: "{n} days left", promo_one: "1 day left", promo_last: "Last day!",
+    promo_preview: "Preview only. This deal isn't running right now.",
+    fix_title: "What happened to your phone?",
+    fix_sub: "Pick your phone to see the full price of each repair. Tap one to text us.",
+    brand_label: "Phone brand", brand_other: "Other",
+    model_label: "Model", model_ph: "Choose your model (optional)", model_other: "Other model",
+    help_q: "Where do I find my model?",
+    help_a: "iPhone: Settings › General › About. Android: Settings › About phone.",
+    tap_hint: "Text us about this repair", from: "From {p}", ask_price: "Ask for a price", free: "Free", in_store: "Prices in store",
+    price_note: "Full prices, parts and labor included. We confirm the price with you before we start.",
+    sample_note: "Sample prices for preview only. The real prices aren't in yet.",
+    fix_call_q: "Prefer to talk?", fix_call_link: "Call {phone}",
+    how_title: "How it works",
+    s1_t: "Walk in", s1_d: "No appointment needed. Our booth is inside Mi Super Mercado Baratísimo.",
+    s2_t: "Free check", s2_d: "We look at your phone and tell you what it needs.",
+    s3_t: "You approve the price", s3_d: "You hear the price before we start. No surprises.",
+    s4_t: "Shop while we fix it", s4_d: "Most repairs are ready in 25–45 minutes.",
+    f1_t: "45-day screen warranty", f1_d: "If a screen we installed acts up, bring it back and we'll make it right.",
+    f2_t: "iPhone, Samsung, tablets and more", f2_d: "Don't see your device on the list? Ask us anyway.",
+    visit_title: "Hours & location", hours_caption: "Opening hours",
+    today: "Today", open_now: "Open now", closed_now: "Closed now", closed: "Closed",
+    directions: "Get directions", reviews: "Google reviews",
+    call_text_label: "Call or text", email_label: "Email",
+    foot_tag: "Phone repair inside Mi Super Mercado Baratísimo in South Wichita.",
+    dock_label: "Quick actions", dock_call: "Call", dock_text: "Text", dock_dir: "Directions",
+    sheet_title: "Your message",
+    sheet_note: "Change anything you like before sending. It goes to {phone}.",
+    send: "Send text", copy: "Copy message", call_instead: "Call instead", close: "Close",
+    copied: "Message copied. Paste it into a text to {phone}.",
+    copy_fail: "Couldn't copy it. Use Send text instead.",
+    sms_hello: "Hi EasyCare!", generic_phone: "phone", hours_missing: "Hours not available"
+  },
+  es: {
+    doc_title: "EasyCare Phone Service | Reparación de celulares en Wichita, KS",
+    skip: "Saltar al contenido",
+    nav_label: "Secciones", nav_fix: "Precios", nav_how: "Cómo funciona", nav_visit: "Horario",
+    hero_title: "Arreglamos tu celular mientras haces tus compras.",
+    hero_lede: "Tráelo a nuestro módulo. La mayoría de las reparaciones quedan listas en 25 a 45 minutos, y no necesitas cita.",
+    replay: "Ver la reparación otra vez",
+    where_title: "Dentro de Mi Super Mercado Baratísimo", where_link: "Cómo llegar",
+    choice1_cap: "Ya sé qué le pasa.", choice1_btn: "Ver precios",
+    choice2_cap: "¿No sabes qué tiene?", choice2_btn: "Ven por una revisión gratis",
+    promo_ribbon: "Oferta por tiempo limitado", promo_left: "Quedan {n} días", promo_one: "Queda 1 día", promo_last: "¡Último día!",
+    promo_preview: "Solo vista previa. Esta oferta no está activa ahora.",
+    fix_title: "¿Qué le pasó a tu celular?",
+    fix_sub: "Elige tu celular para ver el precio completo de cada reparación. Toca una para mandarnos un mensaje.",
+    brand_label: "Marca del celular", brand_other: "Otro",
+    model_label: "Modelo", model_ph: "Elige tu modelo (opcional)", model_other: "Otro modelo",
+    help_q: "¿Dónde veo mi modelo?",
+    help_a: "iPhone: Configuración › General › Información. Android: Configuración (o Ajustes) › Acerca del teléfono.",
+    tap_hint: "Mándanos un mensaje sobre esta reparación", from: "Desde {p}", ask_price: "Pregunta el precio", free: "Gratis", in_store: "Precios en la tienda",
+    price_note: "Precios completos, con pieza y mano de obra incluidas. Te confirmamos el precio antes de empezar.",
+    sample_note: "Precios de muestra, solo para vista previa. Los precios reales todavía no están.",
+    fix_call_q: "¿Prefieres hablar?", fix_call_link: "Llama al {phone}",
+    how_title: "Así funciona",
+    s1_t: "Ven sin cita", s1_d: "Nuestro módulo está dentro de Mi Super Mercado Baratísimo.",
+    s2_t: "Revisión gratis", s2_d: "Revisamos tu celular y te decimos qué necesita.",
+    s3_t: "Tú apruebas el precio", s3_d: "Te damos el precio antes de empezar. Sin sorpresas.",
+    s4_t: "Haz tus compras mientras lo arreglamos", s4_d: "La mayoría de las reparaciones quedan listas en 25 a 45 minutos.",
+    f1_t: "Garantía de 45 días en pantallas", f1_d: "Si una pantalla que instalamos falla, tráela y lo resolvemos.",
+    f2_t: "iPhone, Samsung, tabletas y más", f2_d: "¿No ves tu equipo en la lista? Pregúntanos de todos modos.",
+    visit_title: "Horario y ubicación", hours_caption: "Horario de atención",
+    today: "Hoy", open_now: "Abierto ahora", closed_now: "Cerrado ahora", closed: "Cerrado",
+    directions: "Cómo llegar", reviews: "Reseñas en Google",
+    call_text_label: "Llamada o mensaje", email_label: "Correo",
+    foot_tag: "Reparación de celulares dentro de Mi Super Mercado Baratísimo, en el sur de Wichita.",
+    dock_label: "Acciones rápidas", dock_call: "Llamar", dock_text: "Mensaje", dock_dir: "Cómo llegar",
+    sheet_title: "Tu mensaje",
+    sheet_note: "Puedes cambiar lo que quieras antes de mandarlo. Llega al {phone}.",
+    send: "Mandar mensaje", copy: "Copiar mensaje", call_instead: "Mejor llamar", close: "Cerrar",
+    copied: "Mensaje copiado. Pégalo en un mensaje al {phone}.",
+    copy_fail: "No se pudo copiar. Usa Mandar mensaje.",
+    sms_hello: "¡Hola EasyCare!", generic_phone: "celular", hours_missing: "Horario no disponible"
+  }
+};
+
+/* Repairs. {d} becomes the phone they picked ("iPhone 12"), {p} its full price ("$129.99").
+   msg is the text when there's no exact price; buy is the text when there is. */
+var SERVICES = [
+  { id: "screen", icon: "📱",
+    en: { name: "Screen repair", desc: "Cracked glass, lines, a black screen, or touch that stops working.",
+          msg: "Hi EasyCare! How much is a screen repair for my {d}?",
+          buy: "Hi EasyCare! I need a screen repair for my {d} ({p}). Can you do it today?" },
+    es: { name: "Cambio de pantalla", desc: "Vidrio estrellado, rayas, pantalla negra o el táctil no responde.",
+          msg: "¡Hola EasyCare! ¿Cuánto cuesta el cambio de pantalla para mi {d}?",
+          buy: "¡Hola EasyCare! Necesito el cambio de pantalla para mi {d} ({p}). ¿Me lo pueden hacer hoy?" } },
+  { id: "battery", icon: "🔋",
+    en: { name: "Battery replacement", desc: "Dies fast, shuts off on its own, or the battery is swollen.",
+          msg: "Hi EasyCare! How much is a battery replacement for my {d}?",
+          buy: "Hi EasyCare! I need a battery replacement for my {d} ({p}). Can you do it today?" },
+    es: { name: "Cambio de batería", desc: "Se descarga rápido, se apaga solo o la batería está inflada.",
+          msg: "¡Hola EasyCare! ¿Cuánto cuesta el cambio de batería para mi {d}?",
+          buy: "¡Hola EasyCare! Necesito el cambio de batería para mi {d} ({p}). ¿Me lo pueden hacer hoy?" } },
+  { id: "port", icon: "🔌",
+    en: { name: "Charging port", desc: "Loose cable, slow charging, or it won't charge at all.",
+          msg: "Hi EasyCare! How much to fix the charging port on my {d}?",
+          buy: "Hi EasyCare! I need the charging port fixed on my {d} ({p}). Can you do it today?" },
+    es: { name: "Puerto de carga", desc: "El cable queda flojo, carga lento o no carga para nada.",
+          msg: "¡Hola EasyCare! ¿Cuánto cuesta arreglar el puerto de carga de mi {d}?",
+          buy: "¡Hola EasyCare! Necesito arreglar el puerto de carga de mi {d} ({p}). ¿Me lo pueden hacer hoy?" } },
+  { id: "back", icon: "🪞",
+    en: { name: "Back glass", desc: "Shattered glass on the back of the phone.",
+          msg: "Hi EasyCare! How much is a back glass repair for my {d}?",
+          buy: "Hi EasyCare! I need the back glass replaced on my {d} ({p}). Can you do it today?" },
+    es: { name: "Vidrio trasero", desc: "La tapa de atrás está estrellada.",
+          msg: "¡Hola EasyCare! ¿Cuánto cuesta cambiar el vidrio trasero de mi {d}?",
+          buy: "¡Hola EasyCare! Necesito cambiar el vidrio trasero de mi {d} ({p}). ¿Me lo pueden hacer hoy?" } },
+  { id: "camera", icon: "📷",
+    en: { name: "Camera", desc: "Blurry photos, a black camera, or a cracked lens.",
+          msg: "Hi EasyCare! How much to fix the camera on my {d}?",
+          buy: "Hi EasyCare! I need the camera fixed on my {d} ({p}). Can you do it today?" },
+    es: { name: "Cámara", desc: "Fotos borrosas, cámara en negro o el lente estrellado.",
+          msg: "¡Hola EasyCare! ¿Cuánto cuesta arreglar la cámara de mi {d}?",
+          buy: "¡Hola EasyCare! Necesito arreglar la cámara de mi {d} ({p}). ¿Me lo pueden hacer hoy?" } },
+  { id: "water", icon: "💧",
+    en: { name: "Water damage", desc: "Turn it off, don't charge it, and bring it in as soon as you can.",
+          msg: "Hi EasyCare! My {d} got wet. Can you help me today?",
+          buy: "Hi EasyCare! My {d} got wet and I need the water damage cleaning ({p}). Can you help me today?" },
+    es: { name: "Daño por agua", desc: "Apágalo, no lo cargues y tráelo lo antes posible.",
+          msg: "¡Hola EasyCare! Mi {d} se mojó. ¿Me pueden ayudar hoy?",
+          buy: "¡Hola EasyCare! Mi {d} se mojó y necesito la limpieza por daño de agua ({p}). ¿Me pueden ayudar hoy?" } },
+  { id: "sound", icon: "🔊",
+    en: { name: "Speaker, mic or buttons", desc: "You can't hear calls, they can't hear you, or a button is stuck.",
+          msg: "Hi EasyCare! The sound or buttons on my {d} aren't working right. How much to fix it?",
+          buy: "Hi EasyCare! I need the sound or buttons fixed on my {d} ({p}). Can you do it today?" },
+    es: { name: "Bocina, micrófono o botones", desc: "No oyes las llamadas, no te oyen o un botón no sirve.",
+          msg: "¡Hola EasyCare! Mi {d} tiene problemas con el sonido o los botones. ¿Cuánto cuesta arreglarlo?",
+          buy: "¡Hola EasyCare! Necesito arreglar el sonido o los botones de mi {d} ({p}). ¿Me lo pueden hacer hoy?" } },
+  { id: "check", icon: "🔎",
+    en: { name: "Free check", desc: "Not sure what's wrong? We look at it for free and tell you what it needs.",
+          msg: "Hi EasyCare! Something's wrong with my {d} and I'm not sure what. Can I bring it in for a free check?" },
+    es: { name: "Revisión gratis", desc: "¿No sabes qué tiene? Lo revisamos gratis y te decimos qué necesita.",
+          msg: "¡Hola EasyCare! Mi {d} tiene un problema y no sé qué es. ¿Puedo pasar para una revisión gratis?" } },
+  { id: "acc", icon: "🎧",
+    en: { name: "Accessories", desc: "Cases, chargers, cables and screen protectors.",
+          msg: "Hi EasyCare! Do you have cases or chargers for my {d}?" },
+    es: { name: "Accesorios", desc: "Fundas, cargadores, cables y micas.",
+          msg: "¡Hola EasyCare! ¿Tienen fundas o cargadores para mi {d}?" } }
+];
+
+var BRANDS = ["iPhone", "Samsung", "Motorola", "Other"];
+var MODELS = {};   /* built from SHOP.prices: brand -> [{ m: model, g: its price group }] */
+BRANDS.forEach(function(b){ MODELS[b] = []; });
+SHOP.prices.forEach(function(g){
+  if (!MODELS[g.brand]) return;
+  g.models.forEach(function(m){ MODELS[g.brand].push({ m: m, g: g }); });
+});
+
+var DAY_EN = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var DAY_ES = ["Domingo", "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"];
+
+var state = { lang: "en", brand: "iPhone", model: "", service: null, edited: false };
+function $(s){ return document.querySelector(s); }
+function $$(s){ return Array.prototype.slice.call(document.querySelectorAll(s)); }
+function t(key){
+  var v = T[state.lang][key];
+  if (v == null) v = T.en[key];
+  return v == null ? "" : String(v).replace(/\{phone\}/g, SHOP.phonePretty);
+}
+
+/* ---------- time in Wichita, whatever the visitor's own time zone ---------- */
+function nowWichita(){
+  var d = new Date();
+  try {
+    var parts = new Intl.DateTimeFormat("en-US", { timeZone: "America/Chicago", weekday: "short", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hourCycle: "h23" }).formatToParts(d);
+    var g = function(type){ for (var i = 0; i < parts.length; i++) if (parts[i].type === type) return parts[i].value; return ""; };
+    var h = parseInt(g("hour"), 10); if (h === 24) h = 0;
+    return { day: ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].indexOf(g("weekday")), mins: h * 60 + parseInt(g("minute"), 10), ymd: g("year") + "-" + g("month") + "-" + g("day") };
+  } catch (e) {
+    var p = function(n){ return (n < 10 ? "0" : "") + n; };
+    return { day: d.getDay(), mins: d.getHours() * 60 + d.getMinutes(), ymd: d.getFullYear() + "-" + p(d.getMonth() + 1) + "-" + p(d.getDate()) };
+  }
+}
+function toMin(hm){ var a = hm.split(":"); return Number(a[0]) * 60 + Number(a[1]); }
+function clock(hm, short){
+  var a = hm.split(":"), h = Number(a[0]), m = Number(a[1]), h12 = h % 12 || 12, ap = h < 12 ? "AM" : "PM";
+  return (short && m === 0) ? h12 + "\u00a0" + ap : h12 + ":" + (m < 10 ? "0" : "") + m + "\u00a0" + ap;
+}
+function las(hm){ return ((Number(hm.split(":")[0]) % 12) || 12) === 1 ? "la" : "las"; }
+
+function getStatus(){
+  var n = nowWichita(), H = SHOP.hours, today = H[n.day];
+  if (today){
+    var o = toMin(today[0]), c = toMin(today[1]);
+    if (n.mins >= o && n.mins < c) return { open: true, soon: c - n.mins <= 30, close: today[1] };
+    if (n.mins < o) return { open: false, when: "today", at: today[0] };
+  }
+  for (var i = 1; i <= 7; i++){
+    var d = (n.day + i) % 7;
+    if (H[d]) return { open: false, when: i === 1 ? "tomorrow" : "later", day: d, at: H[d][0] };
+  }
+  return { open: false, when: "never" };
+}
+function statusText(s, long){
+  var es = state.lang === "es", tm, a;
+  if (s.open){
+    tm = clock(s.close, !long); a = las(s.close);
+    if (s.soon) return es ? "Cierra pronto, a " + a + " " + tm : "Closing soon, at " + tm;
+    if (long) return es ? "Cierra a " + a + " " + tm : "Closes at " + tm;
+    return es ? "Abierto hasta " + a + " " + tm : "Open until " + tm;
+  }
+  if (s.when === "never") return t("hours_missing");
+  tm = clock(s.at, !long); a = las(s.at);
+  if (s.when === "today") return es ? "Abre hoy a " + a + " " + tm : "Opens today at " + tm;
+  if (s.when === "tomorrow") return es ? "Abre mañana a " + a + " " + tm : "Opens tomorrow at " + tm;
+  return es ? "Abre el " + DAY_ES[s.day].toLowerCase() + " a " + a + " " + tm : "Opens " + DAY_EN[s.day] + " at " + tm;
+}
+function paintStatus(){
+  var s = getStatus(), cls = s.open ? (s.soon ? " soon" : " open") : "";
+  $("#dot").className = "dot" + cls;
+  $("#dot2").className = "dot" + cls;
+  $("#status").classList.toggle("is-open", s.open);
+  $("#statusText").textContent = statusText(s, false);
+  $("#nowBig").textContent = t(s.open ? "open_now" : "closed_now");
+  $("#nowSub").textContent = statusText(s, true);
+}
+function renderHours(){
+  var n = nowWichita(), names = state.lang === "es" ? DAY_ES : DAY_EN;
+  $("#hoursBody").innerHTML = [1, 2, 3, 4, 5, 6, 0].map(function(d){
+    var h = SHOP.hours[d], today = d === n.day;
+    return "<tr" + (today ? ' class="is-today"' : "") + '><th scope="row">' + names[d] + (today ? ' <span class="flag">' + t("today") + "</span>" : "") +
+      "</th><td>" + (h ? clock(h[0]) + " – " + clock(h[1]) : t("closed")) + "</td></tr>";
+  }).join("");
+}
+
+/* ---------- promo banner ---------- */
+function monthName(m){ return new Intl.DateTimeFormat(state.lang === "es" ? "es-US" : "en-US", { month: "long", timeZone: "UTC" }).format(new Date(Date.UTC(2000, m - 1, 1))); }
+function dateRange(a, b){
+  var x = a.split("-").map(Number), y = b.split("-").map(Number), es = state.lang === "es";
+  if (x[1] === y[1]) return es ? "Del " + x[2] + " al " + y[2] + " de " + monthName(x[1]) : monthName(x[1]) + " " + x[2] + "–" + y[2];
+  return es ? "Del " + x[2] + " de " + monthName(x[1]) + " al " + y[2] + " de " + monthName(y[1]) : monthName(x[1]) + " " + x[2] + " – " + monthName(y[1]) + " " + y[2];
+}
+function daysBetween(a, b){
+  var x = a.split("-").map(Number), y = b.split("-").map(Number);
+  return Math.round((Date.UTC(y[0], y[1] - 1, y[2]) - Date.UTC(x[0], x[1] - 1, x[2])) / 864e5);
+}
+function renderPromo(){
+  var P = SHOP.promo, sec = $("#promo");
+  if (!P || !P.start || !P.end){ sec.hidden = true; return; }
+  var today = nowWichita().ymd, live = today >= P.start && today <= P.end;
+  var preview = /[?&]promo(=|&|$)/.test(location.search);
+  if (!live && !preview){ sec.hidden = true; return; }
+  sec.hidden = false;
+  $("#promoTitle").textContent = P.title[state.lang];
+  $("#promoDates").textContent = dateRange(P.start, P.end);
+  $("#promoLines").innerHTML = P.lines.map(function(l){
+    var parts = String(l.price).split(".");
+    return '<li class="tag"><span class="tag-name">' + l[state.lang] + '</span><span class="price"><span class="sr">$' + l.price +
+      '</span><span class="cur" aria-hidden="true">$</span><span aria-hidden="true">' + parts[0] + "</span>" + (parts[1] ? '<sup aria-hidden="true">.' + parts[1] + "</sup>" : "") + "</span></li>";
+  }).join("");
+  var left;
+  if (!live) left = t("promo_preview");
+  else { var n = daysBetween(today, P.end); left = n === 0 ? t("promo_last") : n === 1 ? t("promo_one") : t("promo_left").replace("{n}", n); }
+  $("#promoLeft").textContent = left;
+}
+
+/* ---------- repair picker ---------- */
+function renderBrands(){
+  $("#brandSeg").innerHTML = BRANDS.map(function(b){
+    return '<button type="button" data-brand="' + b + '" aria-pressed="' + (b === state.brand) + '">' + (b === "Other" ? t("brand_other") : b) + "</button>";
+  }).join("");
+}
+function modelLabel(e){ return typeof e.m === "string" ? e.m : e.m.label[state.lang]; }
+function renderModels(){
+  var list = MODELS[state.brand];
+  var html = '<option value="">' + t("model_ph") + "</option>" + list.map(function(e, i){
+    return '<option value="' + i + '"' + (String(i) === state.model ? " selected" : "") + ">" + modelLabel(e) + "</option>";
+  }).join("");
+  if (state.brand !== "Other") html += '<option value="">' + t("model_other") + "</option>";
+  $("#modelSel").innerHTML = html;
+  if (state.model === "") $("#modelSel").selectedIndex = 0;
+}
+function picked(){ return state.model === "" ? null : MODELS[state.brand][Number(state.model)] || null; }
+function deviceName(){
+  var e = picked();
+  if (e) return typeof e.m === "string" ? e.m : e.m.name[state.lang];
+  return state.brand === "Other" ? t("generic_phone") : state.brand;
+}
+
+/* ---------- full prices ---------- */
+var PRICED = ["screen", "battery", "port", "back", "camera", "sound", "water"];
+var SAMPLE = /[?&]sample(=|&|$)/.test(location.search);
+function money(n){ return "$" + (Math.round(n * 100) % 100 ? n.toFixed(2) : String(Math.round(n))); }
+function priceIn(group, svc){
+  var v = group[svc];
+  if (typeof v === "string") v = parseFloat(v.replace(/[^0-9.]/g, ""));
+  if (typeof v !== "number" || isNaN(v)) v = null;
+  if (v === null && SAMPLE) v = 99.99;
+  return v;
+}
+function priceInfo(svc){
+  if (svc === "check") return { kind: "free" };
+  if (svc === "acc") return { kind: "store" };
+  if (PRICED.indexOf(svc) < 0) return { kind: "ask" };
+  var e = picked();
+  if (e){ var v = priceIn(e.g, svc); return v === null ? { kind: "ask" } : { kind: v === 0 ? "free" : "exact", value: v }; }
+  var low = null;
+  SHOP.prices.forEach(function(g){
+    if (g.brand !== state.brand) return;
+    var x = priceIn(g, svc);
+    if (x !== null && (low === null || x < low)) low = x;
+  });
+  return low === null ? { kind: "ask" } : { kind: "from", value: low };
+}
+function priceLabel(pr){
+  if (pr.kind === "exact") return money(pr.value);
+  if (pr.kind === "from") return t("from").replace("{p}", money(pr.value));
+  if (pr.kind === "free") return t("free");
+  if (pr.kind === "store") return t("in_store");
+  return t("ask_price");
+}
+function renderServices(){
+  $("#menu").innerHTML = SERVICES.map(function(s){
+    var L = s[state.lang], pr = priceInfo(s.id);
+    return '<li><button class="svc" type="button" data-svc="' + s.id + '"><span class="ico" aria-hidden="true">' + s.icon + "</span><span><strong>" + L.name +
+      '</strong><span class="d">' + L.desc + '</span><span class="pr ' + pr.kind + '">' + priceLabel(pr) + '</span><span class="sr">. ' + t("tap_hint") +
+      '</span></span><span class="go" aria-hidden="true"><svg><use href="#ic-chat"/></svg></span></button></li>';
+  }).join("");
+}
+
+/* ---------- message sheet ---------- */
+function smsHref(body){ return "sms:" + SHOP.phone + "?&body=" + encodeURIComponent(body); }
+function compose(id){
+  var s = SERVICES.filter(function(x){ return x.id === id; })[0];
+  if (!s) return "";
+  var L = s[state.lang], pr = priceInfo(id);
+  if (pr.kind === "exact" && L.buy && !SAMPLE) return L.buy.replace("{d}", deviceName()).replace("{p}", money(pr.value));
+  return L.msg.replace("{d}", deviceName());
+}
+var lastFocus = null;
+function openSheet(id){
+  var sheet = $("#sheet"), msg = $("#msg");
+  state.service = id; state.edited = false;
+  msg.value = compose(id);
+  $("#sendSms").href = smsHref(msg.value);
+  lastFocus = document.activeElement;
+  sheet.hidden = false;
+  void sheet.offsetWidth;
+  sheet.classList.add("open");
+  $("#scrim").classList.add("open");
+  document.body.style.overflow = "hidden";
+  setTimeout(function(){ $("#closeSheet").focus(); }, 60);
+}
+function closeSheet(){
+  var sheet = $("#sheet");
+  if (sheet.hidden) return;
+  sheet.classList.remove("open");
+  $("#scrim").classList.remove("open");
+  document.body.style.overflow = "";
+  setTimeout(function(){ sheet.hidden = true; }, 320);
+  if (lastFocus && lastFocus.focus) lastFocus.focus();
+}
+function copyText(txt){
+  if (navigator.clipboard && window.isSecureContext) return navigator.clipboard.writeText(txt);
+  return new Promise(function(resolve, reject){
+    var ta = document.createElement("textarea");
+    ta.value = txt; ta.setAttribute("readonly", ""); ta.style.position = "fixed"; ta.style.opacity = "0";
+    document.body.appendChild(ta); ta.select();
+    try { document.execCommand("copy") ? resolve() : reject(); } catch (e) { reject(e); }
+    document.body.removeChild(ta);
+  });
+}
+var toastTimer;
+function toast(text){
+  var el = $("#toast");
+  el.textContent = text; el.classList.add("show");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(function(){ el.classList.remove("show"); }, 2800);
+}
+
+/* ---------- language ---------- */
+function pickLang(){
+  var q = (location.search.match(/[?&]lang=(en|es)\b/) || [])[1];
+  if (q) return q;
+  try { var saved = localStorage.getItem("easycare_lang"); if (saved === "en" || saved === "es") return saved; } catch (e) {}
+  var first = (navigator.languages && navigator.languages[0]) || navigator.language || "en";
+  return /^es/i.test(first) ? "es" : "en";
+}
+function applyLang(lang){
+  state.lang = lang;
+  document.documentElement.lang = lang;
+  document.title = t("doc_title");
+  $$("[data-i18n]").forEach(function(el){ el.textContent = t(el.getAttribute("data-i18n")); });
+  $$("[data-i18n-aria]").forEach(function(el){ el.setAttribute("aria-label", t(el.getAttribute("data-i18n-aria"))); });
+  $$(".lang button").forEach(function(b){ b.setAttribute("aria-pressed", String(b.getAttribute("data-lang") === lang)); });
+  $("#dockText").href = smsHref(t("sms_hello"));
+  renderBrands(); renderModels(); renderServices(); renderHours(); paintStatus(); renderPromo(); navFade();
+  if (!$("#sheet").hidden && state.service && !state.edited){
+    $("#msg").value = compose(state.service);
+    $("#sendSms").href = smsHref($("#msg").value);
+  }
+}
+
+/* ---------- links, search-engine data, section highlight ---------- */
+function wireLinks(){
+  $$(".js-tel").forEach(function(a){ a.href = "tel:" + SHOP.phone; });
+  $$(".js-phone-text").forEach(function(a){ a.textContent = SHOP.phonePretty; });
+  $$(".js-email").forEach(function(a){ a.href = "mailto:" + SHOP.email; a.textContent = SHOP.email; });
+  $$(".js-maps").forEach(function(a){ a.href = SHOP.maps; });
+  $$(".js-google").forEach(function(a){ a.href = SHOP.google; });
+}
+function addSchema(){
+  var addr = { "@type": "PostalAddress", streetAddress: "2501 S Seneca St", addressLocality: "Wichita", addressRegion: "KS", postalCode: "67217", addressCountry: "US" };
+  var data = {
+    "@context": "https://schema.org", "@type": "MobilePhoneStore",
+    name: "EasyCare Phone Service",
+    description: "Walk-in phone repair inside Mi Super Mercado Baratísimo in Wichita, Kansas: screens, batteries, charging ports, back glass, cameras and accessories.",
+    telephone: SHOP.phone, email: SHOP.email, url: location.origin + location.pathname,
+    address: addr,
+    containedInPlace: { "@type": "GroceryStore", name: "Mi Super Mercado Baratísimo", address: addr },
+    openingHoursSpecification: Object.keys(SHOP.hours).filter(function(d){ return SHOP.hours[d]; }).map(function(d){
+      return { "@type": "OpeningHoursSpecification", dayOfWeek: "https://schema.org/" + DAY_EN[d], opens: SHOP.hours[d][0], closes: SHOP.hours[d][1] };
+    })
+  };
+  var el = document.createElement("script");
+  el.type = "application/ld+json"; el.textContent = JSON.stringify(data);
+  document.head.appendChild(el);
+}
+function navFade(){
+  var n = $("nav.links");
+  n.classList.toggle("more", n.scrollWidth - n.clientWidth - n.scrollLeft > 2);
+}
+function watchSections(){
+  if (!("IntersectionObserver" in window)) return;
+  var links = $$("nav.links a");
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if (!e.isIntersecting) return;
+      links.forEach(function(a){ a.setAttribute("aria-current", a.getAttribute("href") === "#" + e.target.id ? "true" : "false"); });
+    });
+  }, { rootMargin: "-40% 0px -55% 0px" });
+  ["fix", "how", "visit"].forEach(function(id){ io.observe(document.getElementById(id)); });
+}
+
+/* ---------- events ---------- */
+document.addEventListener("click", function(e){
+  var b = e.target.closest ? e.target.closest("button") : null;
+  if (!b) return;
+  if (b.hasAttribute("data-lang")){
+    var l = b.getAttribute("data-lang");
+    try { localStorage.setItem("easycare_lang", l); } catch (err) {}
+    applyLang(l);
+  } else if (b.hasAttribute("data-brand")){
+    state.brand = b.getAttribute("data-brand"); state.model = "";
+    renderBrands(); renderModels(); renderServices();
+    var again = $('#brandSeg [data-brand="' + state.brand + '"]'); if (again) again.focus();
+  } else if (b.hasAttribute("data-svc")){
+    openSheet(b.getAttribute("data-svc"));
+  } else if (b.id === "closeSheet"){
+    closeSheet();
+  } else if (b.id === "copyMsg"){
+    copyText($("#msg").value).then(function(){ toast(t("copied")); }, function(){ toast(t("copy_fail")); });
+  } else if (b.id === "phone"){
+    b.classList.remove("play"); void b.getBoundingClientRect(); b.classList.add("play");
+  }
+});
+$("#modelSel").addEventListener("change", function(e){ state.model = e.target.value; renderServices(); });
+$("#msg").addEventListener("input", function(e){ state.edited = true; $("#sendSms").href = smsHref(e.target.value); });
+$("#scrim").addEventListener("click", closeSheet);
+document.addEventListener("keydown", function(e){ if (e.key === "Escape") closeSheet(); });
+
+/* ---------- start ---------- */
+wireLinks();
+$("#sampleNote").hidden = !SAMPLE;
+addSchema();
+applyLang(pickLang());
+watchSections();
+navFade();
+$("nav.links").addEventListener("scroll", navFade, { passive: true });
+window.addEventListener("resize", navFade);
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(navFade);
+$("#yr").textContent = nowWichita().ymd.slice(0, 4);
+setInterval(function(){ paintStatus(); renderHours(); renderPromo(); }, 60000);
+})();
+</script>
 </body>
 </html>
